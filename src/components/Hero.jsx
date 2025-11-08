@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden bg-[#0a0b14] text-white">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode" style={{ width: '100%', height: '100%' }} />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_600px_at_70%_10%,rgba(99,102,241,0.25),transparent),radial-gradient(800px_400px_at_20%_60%,rgba(56,189,248,0.2),transparent)]" />
       </div>
 
