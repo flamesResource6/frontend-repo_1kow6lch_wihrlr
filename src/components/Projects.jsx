@@ -23,8 +23,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative w-full bg-[#0b0d19] py-24 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_300px_at_30%_0%,rgba(79,70,229,0.12),transparent)]" />
+    <section id="projects" className="relative w-full bg-black py-24 text-white">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_300px_at_30%_0%,rgba(168,85,247,0.12),transparent)]" />
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 12 }}
@@ -49,14 +49,14 @@ export default function Projects() {
             >
               <div className="relative aspect-video overflow-hidden">
                 <img src={p.image} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0b0d19] via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-semibold">{p.title}</h3>
-                <p className="mt-2 text-slate-300 text-sm">{p.description}</p>
+                <p className="mt-2 text-zinc-300 text-sm">{p.description}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {p.stack.map((s) => (
-                    <span key={s} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">
+                    <span key={s} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-200">
                       {s}
                     </span>
                   ))}

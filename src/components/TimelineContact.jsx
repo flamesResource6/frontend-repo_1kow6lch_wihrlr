@@ -18,7 +18,7 @@ const timeline = [
 
 export default function TimelineContact() {
   return (
-    <section id="experience" className="relative w-full bg-[#0a0b14] py-24 text-white">
+    <section id="experience" className="relative w-full bg-black py-24 text-white">
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 12 }}
@@ -42,10 +42,10 @@ export default function TimelineContact() {
                   transition={{ duration: 0.5, delay: i * 0.05 }}
                   className="relative py-6"
                 >
-                  <span className="absolute -left-[9px] top-7 h-4 w-4 rounded-full bg-gradient-to-br from-indigo-400 to-cyan-400 shadow-[0_0_20px_rgba(99,102,241,0.6)]" />
+                  <span className="absolute -left-[9px] top-7 h-4 w-4 rounded-full bg-gradient-to-br from-purple-400 to-fuchsia-400 shadow-[0_0_20px_rgba(168,85,247,0.6)]" />
                   <h3 className="text-xl font-semibold">{t.title}</h3>
-                  <p className="text-slate-300 text-sm mt-1">{t.place} • {t.period}</p>
-                  <p className="text-slate-300 mt-2">{t.detail}</p>
+                  <p className="text-zinc-300 text-sm mt-1">{t.place} • {t.period}</p>
+                  <p className="text-zinc-300 mt-2">{t.detail}</p>
                 </motion.div>
               ))}
             </div>
@@ -68,7 +68,7 @@ export default function TimelineContact() {
               transition={{ duration: 0.5, delay: 0.05 }}
               className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md"
             >
-              <p className="text-slate-300">Let’s build something delightful together.</p>
+              <p className="text-zinc-300">Let’s build something delightful together.</p>
               <div className="mt-4 flex items-center gap-3">
                 <a href="mailto:you@example.com" className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 transition hover:bg-white/10">
                   <Mail className="h-5 w-5" /> <span>Email</span>

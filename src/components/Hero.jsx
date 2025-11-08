@@ -45,10 +45,11 @@ export default function Hero() {
   const typed = useTypewriter(roles)
 
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden bg-[#0a0b14] text-white">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden bg-black text-white">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_600px_at_70%_10%,rgba(99,102,241,0.25),transparent),radial-gradient(800px_400px_at_20%_60%,rgba(56,189,248,0.2),transparent)]" />
+        <Spline scene="https://prod.spline.design/Y7DK6OtMHusdC345/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        {/* Purple neon glow overlays (non-blocking) */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_600px_at_70%_15%,rgba(168,85,247,0.25),transparent),radial-gradient(900px_500px_at_20%_70%,rgba(124,58,237,0.18),transparent)]" />
       </div>
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6">
@@ -59,13 +60,13 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="font-extrabold tracking-tight text-4xl sm:text-6xl leading-tight"
           >
-            Hey, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-sky-300 to-cyan-300">Your Name</span>
+            Hey, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-300 via-purple-200 to-white">Your Name</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="mt-4 text-lg text-slate-300"
+            className="mt-4 text-lg text-zinc-300"
           >
             Frontend Developer & Software Engineering Student
           </motion.p>
@@ -73,7 +74,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-6 text-xl font-medium text-slate-200"
+            className="mt-6 text-xl font-medium text-zinc-200"
           >
             {typed}
           </motion.p>
@@ -84,7 +85,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="mt-10 flex gap-4"
           >
-            <a href="#projects" className="rounded-full bg-white/10 px-6 py-3 backdrop-blur-md transition hover:bg-white/20">
+            <a href="#projects" className="rounded-full bg-white text-black px-6 py-3 transition hover:bg-purple-200">
               View Projects
             </a>
             <a href="#skills" className="rounded-full border border-white/20 px-6 py-3 backdrop-blur-md transition hover:bg-white/10">

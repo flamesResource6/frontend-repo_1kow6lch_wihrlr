@@ -6,11 +6,11 @@ import TimelineContact from './components/TimelineContact'
 
 function App() {
   return (
-    <div className="min-h-screen w-full scroll-smooth bg-[#0a0b14] text-white">
-      <header className="fixed left-0 right-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-[#0a0b14]/50">
+    <div className="min-h-screen w-full scroll-smooth bg-black text-white">
+      <header className="fixed left-0 right-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/60">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#home" className="font-semibold tracking-tight">Portfolio</a>
-          <div className="hidden gap-6 text-sm text-slate-200 sm:flex">
+          <div className="hidden gap-6 text-sm text-zinc-300 sm:flex">
             <a href="#about" className="hover:text-white">About</a>
             <a href="#skills" className="hover:text-white">Skills</a>
             <a href="#projects" className="hover:text-white">Projects</a>
@@ -27,7 +27,7 @@ function App() {
         <TimelineContact />
       </main>
 
-      <footer className="border-t border-white/10 bg-[#0a0b14] py-8 text-center text-sm text-slate-400">
+      <footer className="border-t border-white/10 bg-black py-8 text-center text-sm text-zinc-400">
         © {new Date().getFullYear()} Your Name — Built with React, Tailwind, and a splash of 3D.
       </footer>
     </div>
